@@ -1,0 +1,609 @@
+{
+	"info": {
+		"_postman_id": "c89190b4-2088-4f4e-bb8b-082947c02837",
+		"name": "bazar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34695522"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/cliente/traerlos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cliente/traerlos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"traerlos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cliente/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\" : 3,\r\n    \"dni\" : \"873\",\r\n    \"nombre\" : \"Juana\",\r\n    \"apellido\" : \"Diaz\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cliente/eliminar/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cliente/eliminar/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cliente/traer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cliente/traer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"traer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cliente/editar/1?id_cliente=2&dni=789&nombre=mona&apellido=teAmoHermosa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cliente/editar/1?id_cliente=1&dni=789&nombre=Pepe&apellido=Ordoñes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"editar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id_cliente",
+							"value": "1"
+						},
+						{
+							"key": "dni",
+							"value": "789"
+						},
+						{
+							"key": "nombre",
+							"value": "Pepe"
+						},
+						{
+							"key": "apellido",
+							"value": "Ordoñes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cliente/editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\" : 4,\r\n    \"dni\" : \"234\",\r\n    \"nombre\" : \"Pepe\",\r\n    \"apellido\" : \"Ordoñes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente/editar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/traerlos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/traerlos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"traerlos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_producto\" : 10,\r\n    \"nombre\" : \"computadora\",\r\n    \"marca\" : \"personalizada\",\r\n    \"descripcion\" : \"Visitamos o contactanos y te la enseñamos\",\r\n    \"precio\" : 4000000.0,\r\n    \"cant_disponibles\" : 1.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/eliminar/152",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/eliminar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/traer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/traer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"traer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/editar/1?codigo_produc=1&nombre=silla Gamer&marca=ryzen&precio=170000.0&cant_disponibles=4.0&descripcion=1 year garantia, ajustable mas 2 almoadas extras",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/editar/1?codigo_produc=1&nombre=silla Gamer&marca=ryzen&precio=170000.0&descripcion=1 year garantia, ajustable mas 2 almoadas extras&cant_disponibles=4.0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"editar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "codigo_produc",
+							"value": "1"
+						},
+						{
+							"key": "nombre",
+							"value": "silla Gamer"
+						},
+						{
+							"key": "marca",
+							"value": "ryzen"
+						},
+						{
+							"key": "precio",
+							"value": "170000.0"
+						},
+						{
+							"key": "descripcion",
+							"value": "1 year garantia, ajustable mas 2 almoadas extras"
+						},
+						{
+							"key": "cant_disponibles",
+							"value": "4.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_producto\" : 9,\r\n    \"nombre\" : \"mausePad\",\r\n    \"marca\" : \"Rizen\",\r\n    \"descripcion\" : \"Comodo y suave xd\",\r\n    \"precio\" : 70000.0,\r\n    \"cant_disponibles\" : 6.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/producto/editar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/faltastock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/faltastock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"faltastock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/no_disponible",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/no_disponible",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"no_disponible"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/producto/computadora/hp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/producto/computadora/costumizada",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"producto",
+						"computadora",
+						"costumizada"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/traerlas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/traerlas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"traerlas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_venta\" : 1,\r\n    \"fecha_venta\" : \"16/05/2024\",\r\n    \"total\" : 2360000.0,\r\n    \"listaProductos\" : [\r\n    {\r\n        \"codigo_producto\"  : 1\r\n    },\r\n    {\r\n        \"codigo_producto\" : 4\r\n    },\r\n    {\r\n        \"codigo_producto\" : 8\r\n    }\r\n    ],\r\n    \"unCliente\" : {\r\n        \"id_cliente\" : 1\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/venta/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/eliminar/652",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/eliminar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"eliminar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/traer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/traer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"traer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/editar/53?codigo_venta=4&fecha_venta=2024-03-02&total=3000.0",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/editar/1?codigo_vent=1&fecha_venta=2024-05-16&ttal=2838000.0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"editar",
+						"1"
+					],
+					"query": [
+						{
+							"key": "codigo_vent",
+							"value": "1"
+						},
+						{
+							"key": "fecha_venta",
+							"value": "2024-05-16"
+						},
+						{
+							"key": "ttal",
+							"value": "2838000.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo_venta\" : 1,\r\n    \"fecha_venta\" : \"16/05/2024\",\r\n    \"total\" : 2839000.0,\r\n    \"listaProductos\" : [\r\n    {\r\n        \"codigo_producto\"  : 1\r\n    },\r\n    {\r\n        \"codigo_producto\"  : 4\r\n    },\r\n    {\r\n        \"codigo_producto\"  : 8\r\n    }\r\n    ],\r\n    \"unCliente\" : {\r\n        \"id_cliente\" : 1\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/venta/editar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"editar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/producto/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/producto/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"producto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/2024-03-02",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/2024-05-16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"2024-05-16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/montototal/2025-03-02",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/montototal/2024-05-16",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"montototal",
+						"2024-05-16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/venta/mayor_venta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/venta/mayor_venta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"venta",
+						"mayor_venta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
